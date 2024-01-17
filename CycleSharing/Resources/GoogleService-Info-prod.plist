@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>649054220524-1qjah0ljhghje542288m3qfkh19cav38.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.649054220524-1qjah0ljhghje542288m3qfkh19cav38</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>649054220524-k5nh5641ons51fc3lhpi20krqim7ub2k.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUonkBCFkpxnqFqBP-b75xYGeVGz7kToI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>649054220524</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ausun.anista</string>
+	<key>PROJECT_ID</key>
+	<string>anista-develop</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anista-develop.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:649054220524:ios:1e4f4c2b5aa3af731035c9</string>
+	<key>DATABASE_URL</key>
+	<string>https://anista-develop.firebaseio.com</string>
+</dict>
+</plist>

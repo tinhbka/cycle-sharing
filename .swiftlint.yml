@@ -1,0 +1,134 @@
+# Find all the available rules by running:
+# swiftlint rules
+disabled_rules: # rule identifiers to exclude from running, (suggestion)
+  - force_cast
+  - force_try
+  - control_statement
+  - todo
+  - block_based_kvo
+  - class_delegate_protocol
+  - closing_brace
+  - cyclomatic_complexity
+  - function_parameter_count
+  - generic_type_name
+  - implicit_getter
+  - mark
+  - redundant_string_enum_value
+  - unused_closure_parameter
+  - type_body_length
+  - multiple_closures_with_trailing_closure
+  - void_return
+  - legacy_constructor
+  - valid_ibinspectable
+  - private_over_fileprivate
+  - no_fallthrough_only
+  - empty_enum_arguments
+  - identifier_name
+  - trailing_whitespace
+
+opt_in_rules: # some rules are only opt-in (Require)
+  - closure_spacing
+  - operator_usage_whitespace
+
+# included: # paths to include during linting. `--path` is ignored if present.
+#   - Source
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - fastlane
+  - Tests
+  - Example
+  - Shopping/Resources/R.generated.swift
+  - R.generated.swift
+  - "UtilsEx.swift"
+  - "*/UtilsEx.swift"
+  - "*/*/UtilsEx.swift"
+  - "*/*/*/UtilsEx.swift"
+  - "*/*/*/*/UtilsEx.swift"
+  - "*/*/*/*/*/UtilsEx.swift"
+  - "*/*/*/*/*/*/UtilsEx.swift"
+  - "*/*/*/*/*/*/*/UtilsEx.swift"
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
+
+nesting:
+  type_level:
+    warning: 3
+    error: 6
+  function_level:
+    warning: 5
+    error: 10
+
+large_tuple:
+  warning: 5
+  error: 6
+
+line_length:
+  warning: 240
+  error: 350
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+
+# special configuration for rules
+function_parameter_count:
+  warning: 8
+  error: 10
+
+identifier_name:
+  excluded:
+    - id
+    - T
+    - i
+    - j
+    - x
+    - y
+    - DebugLog
+  allowed_symbols:
+    - _
+  min_length: 2
+  max_length: 80 # warning
+  validates_start_with_lowercase: true
+
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded:  # excluded via string
+    - T
+    - O
+    - Rx
+
+function_body_length:
+  - 150 # warning
+  - 200 # error
+
+file_length:
+  warning: 1024
+  error: 2048
+
+# Require rules (All Rules was enabled by default, you don't put them into disabled_rules)
+  # - colon
+  # - comma
+  # - empty_parameters
+  # - file_length
+  # - function_body_length
+  # - line_length
+  # - opening_brace
+  # - redundant_discardable_let
+  # - redundant_optional_initialization
+  # - redundant_void_return
+  # - return_arrow_whitespace
+  # - statement_position
+  # - trailing_comma
+  # - trailing_semicolon
+  # - trailing_whitespace
+  # - type_name
+  # - unneeded_break_in_switch
+  # - unused_optional_binding
+  # - valid_ibinspectable
+  # - vertical_parameter_alignment
+  # - vertical_whitespace
+  # - weak_delegate
